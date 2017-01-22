@@ -32,13 +32,29 @@ To run antiscrapper you need to install some dependencies.
 
 sudo apt-get install build-essential checkinstall
 
-install python 3.5!
+install python 3.5.x
 
-``` sudo apt-get install python3-pip python3-dev libffi-dev libssl-dev libtiff5-dev libjpeg8-dev zlib1g-dev libwebp-dev
-```sudo pip3 install --upgrade setuptools```
+``` sudo apt-get install python3-pip python3.5-dev libffi-dev libssl-dev libtiff5-dev libjpeg8-dev zlib1g-dev libwebp-dev
+
+```
+sudo add-apt-repository ppa:fkrull/deadsnakes
+sudo apt-get update; 
+sudo apt-get install python3.5
+sudo python3.5 -m pip install -U setuptools
+```
+
+### venv ###
+create venv env in working file
+```virtualenv -p python3.5 venv```
+
+activate venv
+```source venv/bin/activate```
+
+### mitmproxy ###
 ```sudo pip3.5 install mitmproxy```
 
-
+### BeatifulSoap4 ###
+pip3.5 install bs4
  
 
 ## Run ##
